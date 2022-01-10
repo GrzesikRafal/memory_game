@@ -5,6 +5,7 @@ import SortOption from '../../components/SortOption/SortOption'
 import { fetchMovesScore, fetchTimeScore } from '../../Redux/leadboardDataSlice'
 import { useSelector, useDispatch } from 'react-redux'
 import { useState, useEffect } from "react"
+import NewGameButton from '../../components/NewGameButton/NewGameButton'
 
 
 
@@ -40,6 +41,7 @@ const Leaderboard = () => {
                 </S.SortOptionsParent>
                 <S.ScoreLeadboardTitle>{sortedScore === 'Time' ? 'Fastest Guesees' : 'Most Accurate Guesses'}</S.ScoreLeadboardTitle>
                 <TopResults sortedGridSize={sortedGridSize} sortedScore={sortedScore} />
+                <NewGameButton />
             </S.LeadboardContainer>
         </GameContainer>
     )

@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import ThemeProvider from './components/ThemeProvider/ThemeProvider'
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import CssReset from './CssReset/CssReset'
 import { store } from './Redux/Redux'
-import { Provider } from 'react-redux'
-import ThemeProvider from './components/ThemeProvider/ThemeProvider'
 import { BrowserRouter as Router } from 'react-router-dom'
+import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux'
+import ReactDOM from 'react-dom';
+import React from 'react';
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

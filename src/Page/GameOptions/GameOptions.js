@@ -9,7 +9,7 @@ import { prepareNewGame } from '../../Redux/gameSlice'
 import { useContext } from "react"
 
 const GameOptions = () => {
-    const { gridSize, gameTheme } = useSelector((state) => state.gameSettings)
+    const { gridSize, gameTheme } = useSelector(state => state.gameSettings)
     const themeContext = useContext(ThemeContext)
     const dispatch = useDispatch()
 

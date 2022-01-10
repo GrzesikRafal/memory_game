@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion"
 export const OptionsContainer = styled(motion.div)`
   background: white;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 15px;
   overflow:hidden;
   @media (min-width: 576px) {
@@ -11,7 +11,7 @@ export const OptionsContainer = styled(motion.div)`
   }
 
   @media(min-width:768px){
-    padding: 8rem;
+    padding: 5rem;
   }
 `;
 export const RowTitle = styled(motion.h2)`

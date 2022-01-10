@@ -17,15 +17,7 @@ font-size:2rem;
     background-repeat: no-repeat;
 }
 `
-export const NewGame = styled(Link)`
-text-align:center;
-padding:.5rem 1rem;
-border-radius:15px;
-font-weight:900;
-margin-right:3rem;
-color:${props => props.$themeContext.active};
-background:${props => props.$themeContext.success};
-`
+
 export const Navigation = styled.nav`
 display:flex;
 position:relative;

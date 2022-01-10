@@ -1,5 +1,4 @@
 import * as S from './TopResultsStyle'
-import { useEffect } from 'react'
 import { useDoubleDigit } from '../../Hooks/useDoubleDigit'
 import { MdCheckCircle as UserScoreIcon } from 'react-icons/md'
 import useLocalStorage from '../../Hooks/useLocalStorage'
@@ -15,7 +14,7 @@ const Result = ({ value, rank, sortedGridSize }) => {
     return (
         <S.ResultContainer>
             <S.Rank>{`#${rank}`}</S.Rank>
-            <S.ResultValue >{score}</S.ResultValue>
+            <p>{score}</p>
             {storagedScore && storagedScore.map((LocalUserScore, index) => {
                 if ((LocalUserScore.movesCounter === value) ||
                     (LocalUserScore.minutes === value.minutes && LocalUserScore.seconds === value.seconds)) {

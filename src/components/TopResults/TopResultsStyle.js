@@ -35,12 +35,12 @@ export const ResultContainer = styled.div `
     font-family: monospace;
   }
 `;
-export const ResultValue = styled.p ``;
+
 export const Rank = styled.p `
-  transform: scale(0.8);
+  transform: scale(0.7);
 `;
 export const ResultsLegend = styled.span `
-  margin-top: 3rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: flex-end;
   gap: 0.3rem;
@@ -48,4 +48,3 @@ export const ResultsLegend = styled.span `
   font-size: 1.2rem;
   font-weight: 600;
 `;
-export const YourScore = styled.div ``;

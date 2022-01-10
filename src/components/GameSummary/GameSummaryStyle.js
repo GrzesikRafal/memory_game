@@ -15,14 +15,14 @@ export const Background = styled(motion.div)`
 position:absolute;
 top:0;
 left:0;
-width:100vw;
-min-height:100vh;
+bottom:0;
+right:0;
 background-color:black;
 z-index:2;
 `
 export const SummaryContainer = styled(motion.div)`
 position:absolute;
-top:10rem;
+top:20%;
 margin:0 auto;
 padding:1rem 2rem;
 overflow:hidden;
@@ -46,6 +46,10 @@ padding:1rem;
 margin-bottom:1rem;
 border-radius:15px;
 background:${props => props.$themeContext.bgGame};
+`
+export const ResultTitle=styled.p`
+transform:scale(0.8);
+font-weight:900;
 `
 export const Result = styled.p`
 font-size:1.3rem;

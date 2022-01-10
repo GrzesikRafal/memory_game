@@ -47,8 +47,9 @@ export const ButtonPending = styled.button`
 `;
 export const ButtonSuccess = styled.button`
   ${button}
-  animation:${success} .2s linearforwards;
+  animation:${success} .2s linear forwards;
   background: ${(props) => props.$themeContext.active};
   color: white;
   pointer-events: none;
+  z-index:1;
 `;

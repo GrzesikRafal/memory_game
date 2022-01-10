@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const LeadboardContainer = styled.div`
   margin-top: 4rem;
+  padding-bottom:2rem;
   background: white;
   text-align: center;
   border-radius: 5px;

@@ -11,7 +11,6 @@ gap:${props => props.$gridSize === 4 ? '1.5rem' : '.5rem'};
 margin-bottom:1.5rem;
 }
 @media(min-width:768px){
-    gap:1.5rem;
 margin-bottom:3rem;
 }
 
