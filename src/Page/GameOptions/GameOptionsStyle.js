@@ -30,7 +30,7 @@ export const Button = styled(motion(Link))`
   background: ${(props) => props.$theme.success};
   color: ${(props) => props.$theme.fontColor};
   transition:box-shadow .3s;
-    :hover{
+    :hover,:focus{
       box-shadow: ${(props) => props.$theme.success} 0px 10px 36px 0px, ${(props) => props.$theme.success} 0px 0px 0px 1px;
     }
   @media(min-width:768px){

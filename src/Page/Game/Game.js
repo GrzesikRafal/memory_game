@@ -19,7 +19,7 @@ export const Game = () => {
     const { arrayOfGuesses, successGuesses } = useSelector(state => state.userGuesses)
     const [storaged4GridScore, setStoraged4GridScore] = useLocalStorage('4GridScore')
     const [storaged6GridScore, setStoraged6GridScore] = useLocalStorage('6GridScore')
-    const [isGameFinished, setIsGameFinished] = useState(false)
+    const [isGameFinished, setIsGameFinished] = useState(true)
     const [isGameStarted, setIsGameStarted] = useState(false)
     const [movesCounter, setMovesCounter] = useState(0)
     const themeContext = useContext(ThemeContext)
@@ -86,7 +86,7 @@ export const Game = () => {
         <GameContainer variants={SlideInAnimation} initial='hidden' animate='visible' $justify='flex-start' >
             <Navigation />
             {arrayOfNumbers.length !== 0 ? (
-                <S.GridContainer $gridSize={gridSize}>
+                <S.GridContainer   $gridSize={gridSize}>
                     {arrayOfNumbers.map((value, index) => (
                         <GridItem
                             key={index}
@@ -104,9 +104,8 @@ export const Game = () => {
                 :
                 <Redirect to='/' />}
             <GameScore movesCounter={movesCounter} time={{ seconds, minutes }} $themeContext={themeContext.theme} />
-            {isGameFinished && <GameSummary movesCounter={movesCounter} time={{ seconds, minutes }} />}
+            {isGameFinished && <GameSummary  movesCounter={movesCounter} time={{ seconds, minutes }} />}
         </GameContainer>
-
     )
 }
 export default Game

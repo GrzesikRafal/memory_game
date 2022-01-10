@@ -5,6 +5,7 @@ export const Logo = styled(Link)`
 position:relative;
 font-weight:900;
 font-size:2rem;
+color:black;
 &:after{
     position: absolute;
     content:"";

@@ -10,6 +10,9 @@ margin-bottom:.5rem;
 width:100%;
 font-weight:bold;
 border-radius:15px;
+:hover,:focus{
+transform:scale(1.1);   
+}
 `
 export const Background = styled(motion.div)`
 position:absolute;
@@ -48,7 +51,7 @@ border-radius:15px;
 background:${props => props.$themeContext.bgGame};
 `
 export const ResultTitle=styled.p`
-transform:scale(0.8);
+transform:scale(0.9);
 font-weight:900;
 `
 export const Result = styled.p`
@@ -56,13 +59,13 @@ font-size:1.3rem;
 font-weight:bold;
 color:${props => props.$themeContext.active};
 `
-export const SetupNewGameButton = styled(motion(Link))`
+export const SetupNewGameButton = styled(Link)`
 ${button};
 margin-top:1rem;
 color:${props => props.$themeContext.fontColor};
 background:${props => props.$themeContext.success};
 `
-export const RankingButton = styled(motion(Link))`
+export const RankingButton = styled(Link)`
 ${button};
 color:${props => props.$themeContext.fontColor};
 background:${props => props.$themeContext.active};
