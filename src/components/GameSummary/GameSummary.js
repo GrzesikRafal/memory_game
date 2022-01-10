@@ -41,7 +41,7 @@ const GameSummary = ({ movesCounter, time }) => {
                 <SummaryItem title='Time Elapsed' value={time} $themeContext={themeContext.theme} />
                 <SummaryItem title='Moves Taken' value={movesCounter} $themeContext={themeContext.theme} />
                 <S.SetupNewGameButton to='/' whileHover={{ scale: 1.1 }} $themeContext={themeContext.theme}>Setup New Game</S.SetupNewGameButton>
-                <S.RankingButton to='leaderboard' whileHover={{ scale: 1.1 }} $themeContext={themeContext.theme}>Ranking</S.RankingButton>
+                <S.RankingButton to='leaderboard' whileHover={{ scale: 1.1 }} $themeContext={themeContext.theme}>Leaderboard</S.RankingButton>
             </S.SummaryContainer>
         </>
     )
