@@ -1,3 +1,24 @@
+# Memory Game
+## Play Memory Game here : [Memory Game](https://grzesikrafal.github.io/memory_game/)
+
+Your task is to guess the location of all pairs of numbers or icons (it depends what you prefer).<br />
+You can choose between easier mode 4x4 or harder 6x6 grid.
+<br/>
+When you finish, you can compare your results such as time elapsed or moves taken with other players.<br/>
+**Good Luck !!** 
+
+### Technologies used
+
+* React
+* React Router
+* Redux (Redux Toolkit)
+* Firebase
+* Styled Components
+* Material UI
+* Axios
+* Framer motion
+
+Memory Game design is inspired by one of the challanges available at [Frontent Mentor](https://www.frontendmentor.io/)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
