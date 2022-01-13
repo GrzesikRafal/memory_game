@@ -41,7 +41,7 @@ const Leaderboard = () => {
                 </S.SortOptionsParent>
                 <S.ScoreLeadboardTitle>{sortedScore === 'Time' ? 'Fastest Guesees' : 'Most Accurate Guesses'}</S.ScoreLeadboardTitle>
                 <TopResults sortedGridSize={sortedGridSize} sortedScore={sortedScore} />
-                <NewGameButton />
+                <NewGameButton $bigFont/>
             </S.LeadboardContainer>
         </GameContainer>
     )

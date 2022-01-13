@@ -10,6 +10,7 @@ margin-bottom:.5rem;
 width:100%;
 font-weight:bold;
 border-radius:15px;
+transition:transform .5s;
 :hover,:focus{
 transform:scale(1.1);   
 }
@@ -50,7 +51,7 @@ margin-bottom:1rem;
 border-radius:15px;
 background:${props => props.$themeContext.bgGame};
 `
-export const ResultTitle=styled.p`
+export const ResultTitle = styled.p`
 transform:scale(0.9);
 font-weight:900;
 `
