@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TopResultsContainer = styled.div `
+export const TopResultsContainer = styled.div`
   position: relative;
   padding: 2rem;
   margin: 0 1rem;
@@ -14,7 +14,7 @@ export const TopResultsContainer = styled.div `
     margin-bottom: 1rem;
   }
 `;
-export const ResultContainer = styled.div `
+export const ResultContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   font-size: 1.5rem;
@@ -31,15 +31,18 @@ export const ResultContainer = styled.div `
     background-color: white;
     border-radius: 50%;
   }
+  & :nth-child(n + 4){ //child 4,5,6 are possible checkIcons that we wont display , one is enough
+    display:none;
+  }
   & > p {
     font-family: monospace;
   }
 `;
 
-export const Rank = styled.p `
+export const Rank = styled.p`
   transform: scale(0.7);
 `;
-export const ResultsLegend = styled.span `
+export const ResultsLegend = styled.span`
   margin-top: 1rem;
   display: flex;
   justify-content: flex-end;
