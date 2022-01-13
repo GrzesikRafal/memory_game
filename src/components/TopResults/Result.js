@@ -8,8 +8,9 @@ const Result = ({ value, rank, sortedGridSize }) => {
     const [storaged4GridScore] = useLocalStorage('4GridScore')
     const [storaged6GridScore] = useLocalStorage('6GridScore')
 
-    const storagedScore = sortedGridSize == 4 ? storaged4GridScore : storaged6GridScore
+    let storagedScore = sortedGridSize == 4 ? storaged4GridScore : storaged6GridScore
     const score = typeof (value) === 'object' ? `${minutes}:${doubleDigitSeconds}` : value
+    storagedScore = Array.from(new Set(storagedScore.map(JSON.stringify))).map(JSON.parse) // delete repeated elements
 
     return (
         <S.ResultContainer>
