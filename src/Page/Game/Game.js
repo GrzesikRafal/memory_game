@@ -19,7 +19,7 @@ export const Game = () => {
     const { arrayOfGuesses, successGuesses } = useSelector(state => state.userGuesses)
     const [storaged4GridScore, setStoraged4GridScore] = useLocalStorage('4GridScore')
     const [storaged6GridScore, setStoraged6GridScore] = useLocalStorage('6GridScore')
-    const [isGameFinished, setIsGameFinished] = useState(true)
+    const [isGameFinished, setIsGameFinished] = useState(false)
     const [isGameStarted, setIsGameStarted] = useState(false)
     const [movesCounter, setMovesCounter] = useState(0)
     const themeContext = useContext(ThemeContext)
